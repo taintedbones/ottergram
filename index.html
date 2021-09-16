@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ottergram</title>
+    <title>Ottergram</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -18,7 +18,12 @@
     <main class="main-content">
       <ul class="thumbnail-list">
         <li class="thumbnail-item">
-          <a href="#">
+          <a
+            href="img/otter1.jpg"
+            data-image-role="trigger"
+            data-image-title="Stayin' Alive"
+            data-image-url="img/otter1.jpg"
+          >
             <img
               class="thumbnail-image"
               src="img/otter1.jpg"
@@ -28,7 +33,12 @@
           </a>
         </li>
         <li class="thumbnail-item">
-          <a href="#">
+          <a
+            href="img/otter2.jpg"
+            data-image-role="trigger"
+            data-image-title="How Deep Is Your Love"
+            data-image-url="img/otter2.jpg"
+          >
             <img
               class="thumbnail-image"
               src="img/otter2.jpg"
@@ -38,7 +48,12 @@
           </a>
         </li>
         <li class="thumbnail-item">
-          <a href="#">
+          <a
+            href="img/otter3.jpg"
+            data-image-role="trigger"
+            data-image-title="You Should Be Dancing"
+            data-image-url="img/otter3.jpg"
+          >
             <img
               class="thumbnail-image"
               src="img/otter3.jpg"
@@ -48,7 +63,12 @@
           </a>
         </li>
         <li class="thumbnail-item">
-          <a href="#">
+          <a
+            href="img/otter4.jpg"
+            data-image-role="trigger"
+            data-image-title="Night Fever"
+            data-image-url="img/otter4.jpg"
+          >
             <img
               class="thumbnail-image"
               src="img/otter4.jpg"
@@ -58,7 +78,12 @@
           </a>
         </li>
         <li class="thumbnail-item">
-          <a href="#">
+          <a
+            href="img/otter5.jpg"
+            data-image-role="trigger"
+            data-image-title="To Love Somebody"
+            data-image-url="img/otter5.jpg"
+          >
             <img
               class="thumbnail-image"
               src="img/otter5.jpg"
@@ -67,34 +92,32 @@
             <span class="thumbnail-title">Barbara</span>
           </a>
         </li>
-        <li class="thumbnail-item">
-          <a href="#">
-            <img
-              class="thumbnail-image"
-              src="img/flexbox-froggy.jpg"
-              alt="Flexbox Froggy"
-            />
-            <span class="thumbnail-title">Flexbox Froggy Lvl 24</span>
-          </a>
-        </li>
-        <li class="thumbnail-item">
-          <a href="#">
-            <img
-              class="thumbnail-image"
-              src="img/grid-garden.jpg"
-              alt="Grid Garden"
-            />
-            <span class="thumbnail-title">Grid Garden Lvl 28</span>
-          </a>
-        </li>
       </ul>
 
-      <div class="detail-image-container">
-        <div class="detail-image-frame">
-          <img class="detail-image" src="img/otter1.jpg" alt="" />
-          <span class="detail-image-title">Stayin Alive</span>
+      <div class="detail-flex-container">
+        <div class="detail-button-container">
+          <button class="detail-button" onclick="showPrevImage()">
+            <h1><</h1>
+        </div>
+        <div class="detail-image-container">
+          <div class="detail-image-frame" data-image-role="frame">
+            <img
+              class="detail-image"
+              data-image-role="target"
+              src="img/otter1.jpg"
+              alt=""
+            />
+            <span class="detail-image-title" data-image-role="title"
+              >Stayin Alive</span
+            >
+          </div>
+        </div>
+        <div class="detail-button-container">
+          <button class="detail-button" id="next-button" onclick="showNextImage()">
+            <h1>></h1>
         </div>
       </div>
     </main>
+    <script src="scripts/main.js" charset="utf-8"></script>
   </body>
 </html>
